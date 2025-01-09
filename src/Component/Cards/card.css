@@ -1,0 +1,107 @@
+/* card.css */
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin: 8px 0;
+}
+
+.card-rating {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 10px 0;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Styles for Add To Cart Button */
+.card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for Number Input */
+.card input[type="number"] {
+  width: 60px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.card input[type="number"]:focus {
+  border-color: #007bff;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .card {
+    max-width: 350px;
+  }
+}
+.card-container{
+  display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+}
+.input{
+  margin-left: 20px;
+}

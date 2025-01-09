@@ -1,9 +1,11 @@
-import './App.css';
-import Form from './Component/Form/Form'
+import React from 'react';
+import ProdList from './Component/Cards/prodlist';
+
 function App() {
   return (
-    <div className="App">
- <Form/>
+    <div>
+      <h1>Product List</h1>
+      <ProdList />
     </div>
   );
 }
