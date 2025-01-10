@@ -16,7 +16,7 @@ function NavBar(){
       <li><a href="#services">Services</a></li>
       <li  >  
          <button onClick={handliaerLogin}>
-            {Islogin ? 'Logout' : 'Login'}
+            {Islogin ? '<a>Logout</a>' : '<a>Login</a>'}
           </button></li>
 
     </ul>
